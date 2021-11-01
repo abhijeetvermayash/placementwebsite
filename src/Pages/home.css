@@ -1,0 +1,280 @@
+.container {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+.video {
+  width: 150%;
+  height: 100%;
+}
+.place {
+  margin-top: 0px;
+
+  margin-bottom: 0px;
+  background: white;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: absolute;
+  top: 0;
+  font-size: 100px;
+  color: #f1f1f1;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 100%;
+  /* display: flex; */
+  justify-content: left;
+  align-items: left;
+  padding: 0;
+}
+.sub-content {
+  text-align: left;
+}
+.sub-content h1 {
+  color: #ffff;
+  font-size: 1.3rem;
+  margin: 0px;
+  padding: 0px;
+}
+.sub-content p {
+  color: #eee;
+  font-size: 1rem;
+  margin: 5px 0;
+}
+.sub-content button {
+  font-weight: bold;
+  color: #f1f1f1;
+  border: #f1f1f1 1px solid;
+  padding: 10px 5px;
+  background-color: hsla(0, 0%, 0%, 0);
+  font-size: 0.9rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+.sub-content button:hover {
+  background-color: #f1f1f1;
+  color: #000000c0;
+}
+
+.sub-content img {
+  display: none;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  padding: 2rem;
+}
+.cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+}
+@media (min-width: 600px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 900px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    margin: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  /* Style the video: 100% width and height to cover the entire window */
+  .video {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Add some content at the bottom of the video/page */
+  .content {
+    position: absolute;
+    top: 0;
+    color: #f1f1f1;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  .sub-content {
+    text-align: center;
+    padding: 10px;
+  }
+  .sub-content h1 {
+    color: #ffff;
+    font-size: 1.7rem;
+  }
+  .sub-content p {
+    color: #efefef;
+    font-size: 1.3rem;
+    margin: 10px 0 !important;
+  }
+  .sub-content button {
+    font-weight: bold;
+    margin-top: 5px;
+    color: #f1f1f1;
+    border: #f1f1f1 1px solid;
+    padding: 10px 5px;
+    background-color: hsla(0, 0%, 0%, 0);
+    font-size: 1.25rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .sub-content button:hover {
+    background-color: #f1f1f1;
+    color: #000000c0;
+  }
+
+  .sub-content img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: block;
+    margin: 15px auto;
+    border: #f1f1f1 1px solid;
+    opacity: 0.4;
+  }
+}
+.bar {
+  height: auto;
+  width: auto;
+}
+
+@media (min-width: 600px) {
+  .bar {
+    height: auto;
+    width: auto;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .bar {
+    width: 800px;
+    float: left;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .bar {
+    width: 800px;
+  }
+}
+.pies {
+  height: auto;
+  width: auto;
+  margin-top: 100px;
+}
+
+@media (min-width: 600px) {
+  .pies {
+    height: auto;
+    width: auto;
+    margin-top: 0px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .biggap {
+    height: 450px;
+    background-color: white;
+  }
+  .biggap2 {
+    height: 550px;
+    background-color: white;
+  }
+  .mycard {
+    background: white;
+    box-shadow: 3px 3px 5px 3px;
+    padding: 20px;
+    margin-left: 25px;
+  }
+  .pies {
+    width: 500px;
+    float: right;
+    margin-right: 100px;
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .biggap {
+    height: 450px;
+    background-color: white;
+  }
+  .biggap2 {
+    height: 550px;
+    background-color: white;
+  }
+
+  .pies {
+    width: 500px;
+    height: 500px;
+    float: right;
+    margin-right: 100px;
+    margin-top: 0px;
+  }
+}
+.mycard {
+  background: white;
+  box-shadow: 3px 3px 5px 3px;
+  padding: 5px;
+  margin-top: 250px;
+}
+
+/* some */
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column1 {
+    width: 100%;
+    margin-bottom: 120px;
+  }
+}
